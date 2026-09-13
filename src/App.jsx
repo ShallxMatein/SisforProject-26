@@ -8,10 +8,8 @@ import ScrollProgress from './components/ScrollProgress'
 import ScrollTop from './components/ScrollTop'
 
 const RIBBON = [
-  'Semangat Merah Putih',
-  'UNHAS Angkatan 26',
-  'Bersatu dalam Karya',
-  'Satu Angkatan, Satu Cerita',
+  'Sisfor Angkatan 26',
+  'Universitas Hasanuddin',
 ]
 
 function RibbonGroup({ prefix }) {
