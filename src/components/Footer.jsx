@@ -68,8 +68,7 @@ function Footer() {
       <div className="footer-bottom">
         <div className="container">
           © {new Date().getFullYear()}{' '}
-          <strong>Angkatan 26 — Universitas Hasanuddin</strong>. Dibuat dengan
-          ❤️ dan semangat merah putih.
+          <strong>Sistem Informasi-Universitas Hasanuddin</strong>. Dibuat oleh Mahasiswa aktif Sistem Informasi Angkatan 26.
         </div>
       </div>
     </footer>
