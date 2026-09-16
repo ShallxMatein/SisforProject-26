@@ -10,6 +10,7 @@ import ScrollTop from './components/ScrollTop'
 const RIBBON = [
   'Sisfor Angkatan 26',
   'Universitas Hasanuddin',
+  'Beda Cara Satu Tujuan',
 ]
 
 function RibbonGroup({ prefix }) {
