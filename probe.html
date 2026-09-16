@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>UNHAS-26 error probe</title>
+    <script>
+      window.__errors = []
+      window.addEventListener('error', (ev) => {
+        window.__errors.push(String((ev.error && ev.error.stack) || ev.message || ev.error))
+      })
+      window.addEventListener('unhandledrejection', (ev) => {
+        window.__errors.push('UNHANDLED: ' + String((ev.reason && ev.reason.stack) || ev.reason))
+      })
+      window.addEventListener('DOMContentLoaded', () => {
+        setTimeout(() => {
+          const box = document.getElementById('errbox')
+          if (box) {
+            box.textContent =
+              'ROOT_HTML_LEN=' + (document.getElementById('root').innerHTML.length) +
+              ' | ERRORS=' + window.__errors.length + ' | ' + window.__errors.join(' |||| ')
+          }
+        }, 8000)
+      })
+    </script>
+    <script type="module" crossorigin src="./assets/index-C5_Mdxgp.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <pre id="errbox">WAITING</pre>
+  </body>
+</html>
