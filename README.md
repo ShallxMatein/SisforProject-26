@@ -1,16 +1,55 @@
-# React + Vite
+# Website Resmi AKSAVÈRA 26
+### Proggram Studi Sistem Informasi — Universitas Hasanuddin
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Selamat datang di repository resmi website angkatan **AKSAVÈRA 26** (Sistem Informasi Unhas 2026). Platform ini dibuat sebagai pusat informasi, direktori mahasiswa, album kenangan, serta wadah kolaborasi seluruh anggota angkatan.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 📌 Fitur Utama
 
-## React Compiler
+- **Directory Mahasiswa**: Daftar dan profil lengkap mahasiswa Sistem Informasi 2026.
+- **Galeri & Kenangan**: Dokumentasi kegiatan, momen perkuliahan, dan agenda angkatan.
+- **Informasi & Pengumuman**: Pusat berita seputar perkuliahan, tugas besar, dan kegiatan internal.
+- **Struktur Organisasi**: Informasi pengurus angkatan dan divisi yang bertugas.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the Oxlint configuration
+## 🛠️ Teknologi yang Digunakan
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+- **Frontend Framework**: [React.js](https://react.dev/) + [Vite](https://vitejs.dev/)
+- **Styling**: CSS Modules / Tailwind CSS
+- **Linter & Tooling**: [Oxlint](https://oxc.rs/)
+- **Icons & Assets**: SVG Favicon & Assets Manager
+
+---
+
+## 📂 Struktur Proyek
+
+```text
+SisforProject-26/
+├── dist/                  # Build output untuk produksi
+│   ├── assets/
+│   ├── favicon.svg
+│   ├── index.html
+│   └── probe.html
+├── node_modules/          # Dependency node
+├── public/                # Aset publik statis
+│   ├── favicon.svg
+│   └── probe.html
+├── src/                   # Source code utama
+│   ├── assets/photos/     # Aset gambar & foto angkatan
+│   ├── components/        # Komponen React reusable
+│   ├── hooks/             # Custom React Hooks
+│   ├── lib/               # Utility / Helper functions
+│   ├── App.jsx            # Main Component App
+│   ├── index.css          # Global styling
+│   └── main.jsx           # Entry point React
+├── .gitignore             # Ignore file Git
+├── .oxlintrc.json         # Konfigurasi Oxlint
+├── cleanup.log            # Log pembersihan proyek
+├── index.html             # Template HTML utama
+├── package-lock.json      # Dependency lockfile
+├── package.json           # Manifest proyek & script
+├── README.md              # Dokumentasi proyek
+├── up.bat                 # Automation script (Windows)
+└── vite.config.js         # Konfigurasi Vite
